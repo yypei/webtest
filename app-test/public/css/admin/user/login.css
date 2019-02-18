@@ -1,0 +1,17 @@
+.login-box{
+    width: 500px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+label.error{
+    color: red;
+    font-weight: normal;
+}
+.panel-title{
+    margin-bottom: 10px;
+}
+.img-code-btn{
+    width: 100%;
+    height:34px;
+    cursor: pointer;
+}

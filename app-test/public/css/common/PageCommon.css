@@ -1,0 +1,148 @@
+@charset "utf-8";
+html, body {
+    font: 14px "Microsoft YaHei", "微软雅黑", Arial, Helvetica, sans-serif;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: inherit;
+    font-weight: normal;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol, li, dd, dl, dt {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "Microsoft YaHei", "微软雅黑", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+table, td, tr, th {
+    border-collapse: collapse;
+    border: none;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Microsoft YaHei", "微软雅黑", Arial, Helvetica, sans-serif;
+    outline: none;
+    font-weight: normal;
+    color: #607485;
+}
+p {
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+em, i {
+    font-style: normal;
+}
+
+label {
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th {
+    font-weight: normal;
+}
+
+table th, table td {
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+b, i {
+    font-weight: normal;
+    font-style: normal;
+}
+
+input, select, textarea {
+    vertical-align: middle;
+    outline: none;
+}
+
+input {
+    font-family: "Microsoft YaHei", "微软雅黑", Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+input[type="button"]:hover {
+    background-color: #2ca2ff;
+}
+
+:focus {
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #f07a24;
+}
+
+input[type="password"]:focus {
+    border: 1px solid #f07a24;
+}
+input[type="password"]:focus {
+    border: 1px solid #f07a24;
+}
+
+.float-right{
+    float:right;
+}
+.float-left{
+    float:left;
+}
+.clearfix:after {
+    content: "";
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/* 项目公共类 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.content{
+    min-width: 1200px;
+}
+.dis-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

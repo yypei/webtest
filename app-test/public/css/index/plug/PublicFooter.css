@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+body,html{margin:0 auto;min-height:100%; width:100%; color: #444;}
+body{font-family:"微软雅黑",'Microsoft YaHei',Arial,sans-serif; font-size: 14px;}
+h1,h2,h3,h4,h5,p,i,b,em{ font-style:normal; font-weight:normal;margin: 0;}
+ul,li{ list-style:none;}
+ul{ margin: 0; padding: 0;}
+*,*:active,*:focus{ outline: 0 none;}
+img{border:none; vertical-align:middle;}
+input {outline: none; color:#444; margin:0; padding:0;font-family:"微软雅黑";}
+table{ table-layout:fixed; width:100%;}
+label{ margin-bottom:0 !important;}
+a{text-decoration: none;}
+a:active{outline:none;}
+
+
+/*底部*/
+.sd_index_footer {
+    width: 100%;
+    min-width: 1200px;
+    background-color: #262d38;
+    padding: 35px 0 0;
+    clear: both;
+    margin-top: 20px;
+}
+
+.sd_index_footer a {
+    color: #9aa7ba;
+}
+
+.sd_index_foot {
+    margin-bottom: 40px;
+    overflow: hidden;
+    padding: 0 2%;
+}
+
+.sd_index_foot1 {
+    width: 22%;
+    float: left;
+}
+
+.sd_index_foot1 img {
+    padding-bottom: 15px;
+}
+
+.sd_index_foot1_w {
+    line-height: 26px;
+    font-size: 13px;
+}
+
+.sd_index_foot1_w0 span {
+    width: 160px;
+    display: inline-block;
+    cursor: auto;
+    color: #9aa7ba;
+}
+
+.sd_index_foot1_w a {
+    margin-right: 10%;
+}
+
+.sd_index_foot1_w a:hover, .sd_index_foot1_w a.current {
+    color: #fff;
+}
+
+.sd_index_footer h4 {
+    color: #fff;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+.sd_index_foot2 {
+    width: 24%;
+    float: left;
+}
+
+.sd_index_foot2 p {
+    color: #9aa7ba;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.sd_index_foot2 p.sd_p1, .sd_index_foot2 p.sd_p2, .sd_index_foot2 p.sd_p3, .sd_header_haver a i,
+.btn-primary,
+.or_search_row_function span.or_comment, .or_search_row_function span.or_browse, .or_no_follow, .or_has_follow,
+.sd_glyphicon_phone, .sd_glyphicon_lock, .col-weibo, .col-qq, .col-wexin, .sd_glyphicon_tel, .sd_glyphicon_yzm,
+.sd_glyphicon_yzm01, .sd_action_a1, .sd_action_a2, .sd_action_a3, .credit_level_th, .sd_right_x1, .sd_right_x2,
+.sd_right_x3, .sd_state_tit, .sd_rp_tit3, .cener_list_tit a.cener_sz, .center-yes, .center-no, .cener_zh_top a.xg1,
+.cener_zh_top a.xg2 {
+    background: url("../../../static/images/index/icon.png") no-repeat;
+}
+
+.sd_index_foot2 p.sd_p1 {
+    background-position: 0 6px;
+    padding-left: 27px;
+}
+
+.sd_index_foot2 p.sd_p2 {
+    background-position: 0 -21px;
+    padding-left: 27px;
+}
+
+.sd_index_foot2 p.sd_p3 {
+    background-position: 0 -47px;
+    padding-left: 27px;
+}
+
+.sd_index_foot3 {
+    width: 33%;
+    float: left;
+}
+
+.sd_index_foot4 {
+    width: 20%;
+    float: left;
+}
+
+.sd_index_foot_copy {
+    border-top: 1px solid #2f3543;
+    text-align: center;
+}
+
+.sd_index_foot_copy p {
+    color: #999999;
+    font-size: 13px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+.sd_company_container {
+    width: 1180px;
+    margin: 0 auto;
+    min-width: 1180px;
+}
+.zhaomu img{
+    padding: 0;
+}
+.sd_index_foot1_w0 span a{
+    margin-right: 0;
+}
+/*更新824*/
+.sd_index_foot_second{
+    color: #999999;
+    font-size: 13px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    padding: 0;
+}
+.sd_index_foot_second a{
+    color: #999999;
+    margin-right: 14px;
+    height: 26px;
+    line-height: 26px;
+}
+.sd_index_foot_s1{
+    width: 27%;
+    float: left;
+}
+.sd_index_foot_s2{
+    width: 27%;
+    float: left;
+}
+.sd_index_foot_s2 p{
+    color: #999999;
+    line-height: 26px;
+    margin-bottom: 0;
+    margin-right: 14px;
+    display: inline-block;
+    float: left;
+}
+.sd_index_foot_s3{
+    width: 46%;
+    float: left;
+}
+.sd_index_foot_s2 p.sd_p2,.sd_index_foot_s2 p.sd_p3{
+    background: url("../../../static/images/index/icon_new.png") no-repeat;
+
+}
+
+.sd_index_foot_s2 p.sd_p2 {
+    background-position: 0 -21px;
+    padding-left: 27px;
+}
+
+.sd_index_foot_s2 p.sd_p3 {
+    background-position: 0 -47px;
+    padding-left: 27px;
+}
+
+.zhaomu i{
+    display: inline-block;
+    height:16px;
+    width:29px;
+    margin-bottom:-3px;
+    margin-left: 5px;
+    background: url("../../../static/images/index/hot.gif") no-repeat center center;
+}

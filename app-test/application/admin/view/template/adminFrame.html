@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {block name="title"}<title>Title</title>{/block}
+    {block name="common_css"}
+    <link rel="stylesheet" href="_CSS_common/bootstrap.min.css">
+    <link rel="stylesheet" href="_CSS_common/PageCommon.css">
+    {/block}
+    {block name="header_footer_nav_css"}
+    <link rel="stylesheet" href="_CSS_admin/template/header.css">
+    <link rel="stylesheet" href="_CSS_admin/template/leftNav.css">
+    <link rel="stylesheet" href="_CSS_admin/template/footer.css">
+    {/block}
+    {block name="css"}{/block}
+</head>
+<body>
+{block name="header"}{include file="template:header"}{/block}
+
+
+{block name="container"}
+<div class="content dis-flex">
+    <div>
+        {block name="left_nav"}{include file="template:leftNav"}{/block}
+    </div>
+    <div>
+        {block name="content"}{/block}
+    </div>
+</div>
+{/block}
+
+
+
+{block name="footer"}{/block}
+
+
+{block name="static_js"}
+<script type="text/javascript" src="_JS_static/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="_JS_static/bootstrap.min.js"></script>
+<script type="text/javascript" src="_JS_static/jquery.validate.min.js"></script>
+<script type="text/javascript" src="_JS_common/AllPageJsParent.js"></script>
+{/block}
+{block name="header_nav_js"}
+<script type="text/javascript" src="_JS_admin/template/adminFrame.js"></script>
+<script type="text/javascript" src="_JS_admin/template/header.js"></script>
+<script type="text/javascript" src="_JS_admin/template/leftNav.js"></script>
+{/block}
+{block name="content_js"}{/block}
+{block name="footer_js"}
+<script type="text/javascript" src="_JS_admin/template/footer.js"></script>
+{/block}
+
+</body>
+</html>

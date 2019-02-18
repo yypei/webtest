@@ -1,0 +1,196 @@
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0;
+}
+.clearfloat{
+    zoom:1;
+}
+.tologin-input-box .other-left{
+    float: left;
+}
+.input-count-limit .limit-input{
+    margin-right:10px;
+}
+.input-count-limit .limit-input input{
+    width:190px;
+}
+.input-count-limit .limit-code{
+    width:100px;
+    height: 43px;
+    border-radius: 5px;
+    padding-top: 7px;
+}
+.input-count-limit{
+    display: none;
+}
+.input-count-limit .limit-code img{
+    width:100px;
+}
+.form-box {
+    height: 360px;
+    margin-bottom: 17px;
+}
+
+
+
+.tologin-wrapper{
+    min-width:1180px;
+    background: url('../../../static/images/index/tologin-bjtu1.jpg') center center no-repeat;
+}
+.tologin-center{
+    width:1180px;
+    padding:35px 0;
+    margin:0 auto;
+    overflow: hidden;
+}
+.tologin-box{
+    padding:44px 40px 30px;
+    width:320px;
+    float: right;
+    background: #fff;
+}
+.tologin-tittle{
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom:25px;
+    text-align: center;
+}
+.tologin-input-box input{
+    border:1px solid #e0e0e0;
+    display: block;
+    padding-left: 17px;
+    width:301px;
+    height:48px;
+    line-height:48px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color:#444;
+}
+.tologin-input-box input:focus{
+    border:1px solid #e0e0e0;
+}
+.error-hint-box{
+    padding:6px 0 13px 1px;
+    color:#ff5c57;
+    font-size: 12px;
+    line-height: 14px;
+}
+.top-pad{
+    padding-top: 55px;
+}
+.error-hint{
+    display: none;
+    height:14px;
+}
+.error-hint .icon{
+    display: inline-block;
+    border-radius: 50%;
+    margin-right:5px;
+    background:#ff5c57;
+    color:#fff;
+    width:14px;
+    text-align: center;
+}
+.tologin-box .btn{
+    background:#00af64;
+    color:#fff;
+    line-height:  50px;
+    width:100%;
+    margin-bottom: 22px;
+    font-size:18px;
+}
+.tologin-box .btn:hover{
+    background:#0bc676;
+}
+.register-or-find-password{
+    width:139px;
+    margin:0 auto;
+    overflow: hidden;
+    line-height: 14px;
+}
+.register-or-find-password .now-register,.register-or-find-password .find-password{
+    float:left;
+}
+.register-or-find-password .now-register{
+    padding-right:8px;
+    border-right:2px solid #d0d0d0;
+}
+.register-or-find-password .find-password{
+    padding-left:8px;
+}
+.register-or-find-password a{
+    color:#999;
+}
+.register-or-find-password a:hover{
+    color:#00af64;
+}
+.other-tologin-way{
+    overflow: hidden;
+    line-height: 14px;
+}
+.other-tologin-way>*{
+    float: left;
+}
+.other-tologin-way span{
+    width:102px;
+    height:0;
+    border-top:1px solid #e0e0e0;
+    margin-top: 7px;
+}
+.other-tologin-way p{
+    padding:0 7px;
+    color:#a1a1a1;
+}
+.other-tologin-link{
+    margin-top: 13px;
+    height:41px;
+    overflow: hidden;
+}
+.other-tologin-link a{
+    float: left;
+    width:41px;
+    height:41px;
+}
+.other-tologin-link .sina{
+    background:url('../../../static/images/index/sina-icon.png') no-repeat;
+}
+.other-tologin-link .sina:hover{
+    background:url('../../../static/images/index/sina-icon2.png') no-repeat;
+}
+.other-tologin-link .qq{
+    background:url('../../../static/images/index/qq-icon.png') no-repeat;
+    margin:0 23px;
+}
+.other-tologin-link .qq:hover{
+    background:url('../../../static/images/index/qq-icon2.png') no-repeat;
+}
+.other-tologin-link .wei-xin{
+    background:url('../../../static/images/index/weixin-icon.png') no-repeat;
+}
+.other-tologin-link .wei-xin:hover{
+    background:url('../../../static/images/index/weixin-icon2.png') no-repeat;
+}
+
+
+.bottom-conent-msg-box{
+    width: 1180px;
+    margin: 20px auto 0;
+    background-color: #fff;
+}
+.bottom-conent-msg {
+    padding: 20px 20px;
+    color: #818182;
+    font-size: 14px;
+    text-align: center;
+}
+.bottom-conent-msg p img {
+    padding-left: 25px;
+}

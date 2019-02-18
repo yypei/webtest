@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$title}</title>
+    {foreach $css_arr as $item}
+    <link href="_CSS_{$item}.css" rel="stylesheet">
+    {/foreach}
+    <link rel="stylesheet" href="{$current_page_css}">
+</head>
+<body>
+
+{include file="plug:PublicHeader" /}
+{$page_content}
+{include file="plug:PublicFooter" /}
+
+{foreach $js_arr as $item}
+<script type="text/javascript" src="_JS_{$item}.js"></script>
+{/foreach}
+<script type="text/javascript" src="aa/ff.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0;
+}
+.clearfloat{
+    zoom:1;
+}
+.register-wrapper{
+    background: #f2f4f7;
+    margin-top: 20px;
+}
+.register-center{
+    width:1180px;
+    margin:0 auto;
+    background: #fff;
+    padding:92px 0 112px;
+}
+.register-box{
+    width:340px;
+    background: #fff;
+    margin: 0 auto;
+}
+.register-tittle{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom:35px;
+    text-align: center;
+}
+.register-input-box{
+    font-size: 12px;
+}
+.register-input-box input{
+    border:1px solid #e0e0e0;
+    display: block;
+    padding-left: 16px;
+    width:322px;
+    line-height:40px;
+    height:40px;
+    border-radius: 5px;
+    font-size: 14px;
+    color:#444;
+    background-color: #fff;
+}
+.register-input-box .register-input-other input{
+    color:#444;
+}
+.register-input-box input:focus{
+    border:1px solid #e0e0e0;
+}
+.error-hint-box{
+    padding:6px 0 13px 1px;
+    color:#ff5c57;
+    font-size: 12px;
+    line-height: 14px;
+}
+.top-pad{
+    padding-top: 47px;
+}
+.error-hint{
+    display: none;
+}
+.error-hint .icon{
+    display: inline-block;
+    border-radius: 50%;
+    margin-right:5px;
+    background:#ff5c57;
+    color:#fff;
+    width:14px;
+    text-align: center;
+}
+.register-box .btn{
+    background:#00af64;
+    color:#fff;
+    line-height: 40px;
+    width:100%;
+    margin: 13px 0 20px;
+    text-align: center;
+}
+.other-left{
+    float: left;
+}
+.register-input-other input{
+    width:212px;
+}
+.register-input-box .get-prove-code{
+    background:#fff;
+    width:98px;
+    text-align: center;
+    margin-left:10px;
+    color:#444;
+    padding-left: 0;
+}
+.register-input-box .get-prove-code:hover{
+    background:#00af64;
+    color: #fff;
+}
+.register-box .service-protocol{
+    color:#a1a1a1;
+    line-height: 14px;
+}
+.register-box .service-protocol a{
+    color:#444;
+}
+
+
+.bottom-conent-msg-box{
+    width: 1180px;
+    margin: 20px auto 0;
+    background-color: #fff;
+}
+.bottom-conent-msg {
+    padding: 20px 20px;
+    color: #818182;
+    font-size: 14px;
+    text-align: center;
+}
+.bottom-conent-msg p img {
+    padding-left: 25px;
+}
+
+
+.register-input-box .other-left{
+    float: left;
+}
+.input-count-limit .limit-input{
+    margin-right:10px;
+}
+.input-count-limit .limit-input input{
+    width:212px;
+    height: 40px;
+}
+.input-count-limit .limit-code{
+    width:100px;
+    height: 40px;
+    border-radius: 5px;
+}
+.input-count-limit{
+}
+.input-count-limit .limit-code img{
+    width:100px;
+    height: 40px;
+}

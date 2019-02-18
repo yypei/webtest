@@ -1,0 +1,226 @@
+/*table*/
+.table-style1 {
+    table-layout: fixed;
+    width: 100%;
+    font-size: 14px;
+}
+
+.table-style1 .tb-width1 {
+    width: 40%;
+}
+
+.table-style1 .tb-width2 {
+    width: auto;
+}
+
+.table-style1 .tb-width3 {
+    width: 70px;
+}
+
+.table-style1 .tb-width4 {
+    width: 28%;
+}
+
+.table-style1 .tb-width5 {
+    width: 15%;
+}
+
+.table-style1 .tb-width6 {
+    width: 16%;
+}
+
+.table-style1 .tb-width7 {
+    width: 13%;
+}
+
+.table-style1 .tb-width8 {
+    width: 20%;
+}
+
+.table-style1 .tb-width9 {
+    width: 24%;
+}
+
+.table-style1 tr:nth-child(2n) {
+    background-color: #f9fbfc;
+}
+
+.table-style1 tr:nth-child(2n+1) {
+    background-color: #f0f4f8;
+}
+
+.table-style1 tr td {
+    padding: 16px 18px;
+    color: #95a0aa;
+}
+
+.table-style1 tr .c-orange {
+    color: #f07a24;
+}
+
+.table-style1 .tb-head th {
+    background-color: #a4aeb9;
+    color: #ffffff;
+    padding: 10px 18px;
+}
+
+.dis-none {
+    display: none;
+}
+
+/*loading*/
+.loading {
+    display: none;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.loading .limg {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background: no-repeat url("<?=UrlBuilder::build_static('credit/images/loading.png')?>") left center;
+    animation: spin 1s linear infinite;
+}
+
+.text-primary{
+    color:#1a94f3;
+}
+.text-info{
+    color:#8c8d8d;
+}
+.text-center{
+    text-align: center;
+}
+.btn{
+    border-radius: 4px;
+    padding: 0 10px;
+    display: inline-block;
+    border:none;
+    font-size: 14px;
+    line-height: 30px;
+}
+.btn-primary{
+    background-color: #2196f3;
+    color: #FFFFFF;
+}
+.btn-primary:disabled{
+    background-color: #7ac0f8;
+    color: #d0e7fc;
+}
+.btn-cancel, .btn-ensure{
+    width: 78px;
+    height: 26px;
+    line-height: 26px;
+    border:solid 1px #2196f3;
+    color: #2196f3;
+    margin: 0 7px;
+}
+.btn-cancel:hover, .btn-cancel:active, .btn-ensure:hover, .btn-ensure:active{
+    background-color: #2196f3;
+    color: #FFFFFF;
+}
+
+.model{
+    position: fixed;
+    display: none;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    text-align: center;
+    background-color: #ffffff;
+}
+.model .close{
+    background: url("<?=UrlBuilder::build_static('shuidi/images/shuidi_btn_close.png')?>") center center no-repeat;
+    padding: 15px;
+    display: inline-block;
+    position: absolute;
+    top:10px;
+    right:25px;
+    cursor: pointer;
+}
+/*遮罩层*/
+
+.mask{
+    background-color: #000000;
+    opacity: 0.6;
+    filter:Alpha(opacity=60);
+    width: 100%;
+    height:100%;
+    z-index: 10;
+    position: fixed;
+    top:0;
+    left:0;
+    display: none;
+}
+/*其他*/
+.hide{
+    display: none;
+}
+
+/*右主体*/
+.content-right{
+    font-size: 16px;
+    width: 898px;
+    color: #8c8d8d;
+    border: 1px solid #e7e9ef;
+    background-color: #fff;
+    /*min-height: 650px;*/
+}
+.content-right p{
+    line-height: 100%;
+}
+
+/*标题2*/
+p.cont-tit2{
+    font-size: 16px;
+    color: #444444;
+    height: 16px;
+    line-height: 16px;
+    padding-bottom: 20px;
+    padding-top: 24px;
+}
+/*内容1*/
+.cont-s1{
+    padding: 30px 0;
+    border-bottom: 1px solid #e7e9ef;
+}
+/*button*/
+a.normal-bt{
+    text-align: center;
+    font-size: 14px;
+    background:#1a94f3 ;
+    border-radius: 4px;
+    width: 105px;
+    padding: 7px 0;
+    line-height: 14px;
+    height: 14px;
+    color: #fff;
+    display: inline-block;
+}
+a.normal-bt:hover,a.normal-bt:active{
+    background:#2ca2ff ;
+
+}
+.container{
+    width: 1180px;
+    text-align: left;
+    margin: 0 auto;
+}
+.bordere7e9ef{
+    border:1px solid #e7e9ef;
+}
+
+/*搜索联想组件样式*/
+.ui-helper-hidden-accessible{
+    display: none;
+}
