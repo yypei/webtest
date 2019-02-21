@@ -1,0 +1,301 @@
+.w100,
+html {
+    width: 100%
+}
+
+body {
+    width: 100%;
+    /* max-width: 10rem; */
+    margin: 0 !important;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+a,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: grey
+}
+ 
+button,
+img,
+input,
+input[type=search],
+select {
+    outline: 0
+}
+
+.cur,
+button {
+    cursor: pointer
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+a,
+abbr,
+acronym,
+address,
+b,
+bdo,
+big,
+blockquote,
+body,
+br,
+button,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+img,
+ins,
+kbd,
+legend,
+li,
+map,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+small,
+span,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul,
+var {
+    margin: 0;
+    padding: 0;
+    border: none
+}
+
+body {
+    color: #575556;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+caption,
+th {
+    text-align: left
+}
+
+li,
+ol,
+ul {
+    list-style: none
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: 400
+}
+
+abbr,
+acronym,
+fieldset,
+img {
+    border: 0
+}
+
+img {
+    height: auto;
+    width: auto\9
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    padding: 0;
+    margin: 0 auto;
+    outline: 0
+}
+
+a,
+p {
+    padding: 0;
+    margin: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700
+}
+
+h1 {
+    font-size: 20px
+}
+
+h2 {
+    font-size: 18px
+}
+
+h3 {
+    font-size: 16px
+}
+
+h4 {
+    font-size: 14px
+}
+
+a,
+h5,
+h6 {
+    font-size: 12px
+}
+
+input[type=search] {
+    -webkit-appearance: none
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    display: none
+}
+
+.text-autocut,
+.text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-text-overflow: ellipsis;
+    -khtml-text-overflow: ellipsis;
+    -icab-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+a {
+    display: inline-block
+}
+
+.clr:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clr {
+    zoom: 1
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.tcel {
+    text-align: center
+}
+
+.f20 {
+    font-size: 20px 
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+}
