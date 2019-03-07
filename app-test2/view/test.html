@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Title</title>
+    <style>
+        li{
+            list-style: none;
+        }
+        h3{
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        i{
+            font-style: normal;
+        }
+        .popup{
+            position:fixed;
+            left: 50%;
+            top:50%;
+            width: 500px;
+            height:400px;
+            margin-left: -250px;
+            margin-top: -200px;
+            background-color: #fff;
+            z-index: 1000;
+            display: none;
+        }
+        .popup .popup-header,.popup .popup-body{
+            padding: 20px;
+        }
+        .popup .popup-header{
+            border-bottom:1px solid #999;
+        }
+        .popup .popup-header h3{
+            height: 18px;
+            line-height: 18px;
+        }
+        .popup .popup-footer{
+            text-align: center;
+        }
+        .popup .popup-footer a{
+            display: inline-block;
+            width: 120px;
+            height:30px;
+            line-height: 30px;
+            color: #fff;
+            background-color: #00ae64;
+            border-radius: 5px;
+        }
+        .popup .close-popup{
+            position: absolute;
+            right:10px;
+            top:10px;
+            width: 30px;
+            height:30px;
+            font-size: 30px;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        .mask{
+            position: fixed;
+            height:100%;
+            width: 100%;
+            left: 0;
+            top:0;
+            background-color: rgba(0,0,0,0.5);
+            z-index:10;
+            display: none;
+        }
+        body{
+            font: 14px "Microsoft YaHei", "微软雅黑", Arial, Helvetica, sans-serif;
+            color: #444;
+        }
+        .mar-auto800{
+            width: 800px;
+            margin: 0 auto;
+        }
+        .message-borad-title{
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .message-borad textarea,textarea.modify-message-text{
+            width: 100%;
+            height:300px;
+            resize: none;
+            border: 1px solid #999;
+            outline: none;
+        }
+        .message-borad textarea:focus,textarea.modify-message-text:focus{
+            border: 1px solid #999;
+        }
+        textarea.modify-message-text{
+            height:200px;
+        }
+
+        .sub-btn{
+            display: inline-block;
+            width: 50px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid #00ae64;
+            color: #00ae64;
+            text-decoration: none;
+        }
+        .message-list .del-btn,.message-list .modify-btn{
+            color: #00ae64;
+            margin-left: 10px;
+        }
+        .clean-list{
+            padding: 30px 0;
+            text-align: center;
+        }
+        .clean-list-btn{
+            display: inline-block;
+            width: 120px;
+            height:40px;
+            line-height: 40px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #00ae64;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-borad">
+        <div class="mar-auto800">
+            <div>
+                <h3 class="message-borad-title">留言板</h3>
+                <textarea class="message-text" name="" id="" cols="30" rows="10"></textarea>
+                <a href="javascript:;" class="sub-btn">发表</a>
+            </div>
+            <div class="message-list">
+                <h3>留言列表：</h3>
+                <ul>
+
+                </ul>
+                <div class="clean-list">
+                    <a href="javascript:;" class="clean-list-btn">清空列表</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <i class="close-popup">×</i>
+        <div class="popup-header">
+            <h3>修改留言</h3>
+        </div>
+        <div class="popup-body">
+            <textarea class="modify-message-text" name="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="popup-footer">
+            <a href="javascritp:;" class="modify-sub-btn">修改</a>
+        </div>
+    </div>
+
+    <div class="mask"></div>
+
+    <script src="../static/js/jquery-1.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $.getJSON('./test.php',{'action':'init_page'},function(data){
+                if(data.status===0){
+                    var elStr='';
+                    for(var i=0;i<data.data.length;i++){
+                        elStr+='<li>'+(i+1)+'、<span class="message">'+data.data[i]['message']+'</span><a class="del-btn" href="javascript:;" data-id="'+data.data[i]['id']+'">删除</a><a href="javascript:;" class="modify-btn" data-id="'+data.data[i]['id']+'">修改</a></li>'
+                    }
+                    $('.message-list ul').append($(elStr));
+                }
+            });
+            $('.close-popup').click(function(){
+                $('.popup textarea').val('');
+                $('.popup').hide();
+                $('.mask').hide();
+            });
+            $('.sub-btn').click(function(){
+                $.getJSON('./test.php',{'action':'test_fn','content':$('textarea').val()},function(data){
+                    if(data.status===0){
+                        location.reload();
+                    }else{
+                        alert(data.message);
+                    }
+                })
+            });
+            $('.del-btn').live('click',function(){
+                $.getJSON('./test.php',{'action':'del_info','id':$(this).attr('data-id')},function(data){
+                    if(data.status===0){
+                        location.reload();
+                    }else{
+                        alert(data.message);
+                    }
+                })
+            });
+            $('.clean-list-btn').live('click',function(){
+                $.getJSON('./test.php',{'action':'clean_or_del_table','type':1},function(data){
+                    if(data.status===0){
+                        location.reload();
+                    }else{
+                        alert(data.message);
+                    }
+                })
+            });
+            $('.modify-btn').live('click',function(){
+                $('.popup textarea').val($(this).parents('li').find('span.message').html());
+                $('.popup .modify-sub-btn').attr('id',$(this).attr('data-id'));
+                $('.popup').show();
+                $('.mask').show();
+            });
+            $('.modify-sub-btn').click(function(){
+                $.getJSON('./test.php',{'action':'modify_message','k_info':$(this).attr('id'),'m_info':$(this).parents('.popup').find('textarea').val()},function(data){
+                    console.log(data);
+                    if(data.status===0){
+                        location.reload();
+                    }else{
+                        alert(data.message);
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+</html>
